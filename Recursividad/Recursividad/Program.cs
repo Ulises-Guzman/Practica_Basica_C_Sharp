@@ -2,8 +2,8 @@
 {
     private static void Main(string[] args)
     {
-        Console.WriteLine("- Ingrese un número para calcular su factorial: ");
-        int numeroIngresado = Console.ReadLine();
+        Console.Write("- Ingrese un número para calcular su factorial: ");
+        int numeroIngresado = int.Parse(Console.ReadLine()!);
         Factorial(numeroIngresado);
     }
 
@@ -13,6 +13,7 @@
         for (i = 1; i <= numero; i++)
         {
             resultado = resultado * i;
+            Console.WriteLine(resultado);
         }
         return resultado;
     }
